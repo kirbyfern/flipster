@@ -1,12 +1,22 @@
 <% @places.each do |place| %>
-    <div class="">
+    <div class="hooyah-box col-10 offset-1">
         <h1><%= place.name %></h1>
-        <br />
         <i><%= place.address %></i>
-        <br />
+        <br /><br />
         <p><%= place.description %></p>
         <br />
     </div>
-
-    <hr />
 <% end %>
+
+<!-- DRAGGABLE TO BE IMPLEMENTED -->
+<!--
+<% @places.each do |place| %>
+    <div id="box1" class="box blurred-bg tinted">
+    <div class="content">
+    <h1>Blurred Background</h1>
+        <h2>By <a href="http://kirbyjames.me" rel="follow" target="_blank">Kirb James</a></h2>
+        <p>Drag this box to move around</p>
+    </div>
+    </div>
+<% end %>
+-->

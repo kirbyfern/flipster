@@ -11,3 +11,8 @@
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
+
+//- DRAGGABLE FUNCTION TO BE IMPLEMENTED-//
+// $(function() {
+// 	$( ".box" ).draggable();
+// });
