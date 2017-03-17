@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
 
 body {
     background: image_url('ignasi.png');
@@ -28,6 +29,13 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 1px 3px #2a2a2a;
     letter-spacing: .1em;
 }
+
+.navbar-light, .navbar-brand {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 26px;
+    color: #FCC221;
+}
+
 
 //- DRAGGABLE STYLING OPTION TO BE IMPLEMENTED -//
 // @import "compass/css3";
