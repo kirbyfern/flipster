@@ -1,0 +1,9 @@
+<div class="hooyah-box col-6 offset-3">
+    <%= simple_form_for @place do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :description %>
+        <br />
+        <%= f.submit 'Create', class: 'class="btn btn-outline-primary' %>
+    <% end %>
+</div>
