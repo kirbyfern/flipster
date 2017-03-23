@@ -16,10 +16,30 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-# System
+# Folder view configuration files
 DS_Store
 DS_Store?
 .DS_Store
+Desktop.ini
 
 # Ignore application configuration
 /config/application.yml
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Compiled Python files
+*.pyc
+
+# Compiled C++ files
+*.out
+
+# Application specific files
+venv
+node_modules
+.sass-cache
