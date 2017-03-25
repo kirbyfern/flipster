@@ -25,6 +25,17 @@ label {
     font-family: 'Baloo Bhaina', cursive;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
 blockquote{
   display:block;
   background: #D5E2F2;
