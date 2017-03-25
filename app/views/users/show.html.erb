@@ -61,8 +61,8 @@
 
                                 <% if place.photos.present? %>
                                     <div class="row">
-                                        <div class="col-12">
-                                            <%= image_tag place.photos.last.picture, class: 'rounded' %>
+                                        <div class="col-12 carrier">
+                                            <%= image_tag place.photos.last.picture, class: 'img-fluid' %>
                                         </div>
                                     </div>
                                 <% end %>

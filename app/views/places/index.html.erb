@@ -48,7 +48,7 @@
         <% end %>
 
         <% if place.comments.present? %>
-            <div class="col-12">
+            <div class="col-12 col-md-8">
                 <blockquote>
                     <% if place.comments.last.humanized_rating.present? %>
                         <b> <%= place.comments.last.humanized_rating %> </b> -
@@ -56,6 +56,14 @@
                         <%= place.comments.last.message %>
                     <small><%= place.comments.last.user.email %></small>
                 </blockquote>
+            </div>
+        <% end %>
+
+        <% if place.photos.present? %>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <%= image_tag place.photos.last.picture, class: 'img-fluid' %>
+                </div>
             </div>
         <% end %>
     </div>
