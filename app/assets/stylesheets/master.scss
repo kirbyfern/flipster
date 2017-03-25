@@ -122,3 +122,15 @@ blockquote em{
 #map {
  height: 300px;
 }
+
+body.devise-sessions p.alert-danger {
+    display: none;
+    &.devise {
+        display: block;
+    }
+}
+
+abbr[title] {
+    color: red;
+    text-decoration: none;
+}
