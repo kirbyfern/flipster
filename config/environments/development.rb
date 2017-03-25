@@ -1,16 +1,19 @@
 Rails.application.configure do
-  # MAILER SETTINGS #
-  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :test
 
-  config.action_mailer.smtp_settings = {
-      address: "smtp.gmail.com",
-      port: 587,
-      domain: "example.com",
-      authentication: "plain",
-      enable_starttls_auto: true,
-      user_name: ENV['GMAIL_ADDRESS'],
-      password: ENV['GMAIL_PASSWORD']
-  }
+  # UNCOMMENT SECTION BELOW FOR LIVE EMAILS #
+  # MAILER SETTINGS #
+  # config.action_mailer.delivery_method = :smtp
+  #
+  # config.action_mailer.smtp_settings = {
+  #     address: "smtp.gmail.com",
+  #     port: 587,
+  #     domain: "example.com",
+  #     authentication: "plain",
+  #     enable_starttls_auto: true,
+  #     user_name: ENV['GMAIL_ADDRESS'],
+  #     password: ENV['GMAIL_PASSWORD']
+  # }
 
   # DEVISE DEVELOPMENT SETUP #
   config.action_mailer.default_url_options = { host: 'localhost:3030' }
