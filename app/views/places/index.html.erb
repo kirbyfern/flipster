@@ -8,7 +8,7 @@
         <% if place.user.present? %>
                 <small><%= place.user.email %></small>
         <% end %>
-        
+
         <% if place.comments.present? %>
             <div class="col-12">
                 <blockquote>
@@ -26,16 +26,3 @@
 <div class="">
     <%= paginate @places %>
 </div>
-
-<!-- DRAGGABLE TO BE IMPLEMENTED -->
-<!--
-<% @places.each do |place| %>
-    <div id="box1" class="box blurred-bg tinted">
-    <div class="content">
-    <h1>Blurred Background</h1>
-        <h2>By <a href="http://kirbyjames.me" rel="follow" target="_blank">Kirb James</a></h2>
-        <p>Drag this box to move around</p>
-    </div>
-    </div>
-<% end %>
--->
