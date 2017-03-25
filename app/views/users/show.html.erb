@@ -13,3 +13,27 @@
     </div>
     <div class="clear"></div>
 </div>
+
+<br /><br />
+<h1 class="text-center">My Comments</h1>
+<br /><br />
+<div class="row">
+    <% @user.comments.each do |comment| %>
+        <div class="col-12 col-sm-6">
+            <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
+            <blockquote>
+                <% if comment.humanized_rating.present? %>
+                <div class="clear">
+                    <b> <%= comment.rating %> </b>
+                </div>
+                <div class="clear">
+                    <b> <%= comment.message %> </b>
+                </div>
+                <div class="">
+                    <em><%= comment.user.email %></em>
+                </div>
+                <% end %>
+            </blockquote>
+        </div>
+    <% end %>
+</div>
