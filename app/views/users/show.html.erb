@@ -28,7 +28,7 @@
                 <br class="clear" />
                 <div class="row">
                     <% @user.comments.each do |comment| %>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                             <h3 class="text_center"><%= link_to comment.place.name, place_path(comment.place) %></h3>
                             <blockquote>
                                 <% if comment.humanized_rating.present? %>
@@ -61,7 +61,7 @@
 
                                 <% if place.photos.present? %>
                                     <div class="row">
-                                        <div class="col-12 carrier">
+                                        <div class="col-12">
                                             <%= image_tag place.photos.last.picture, class: 'img-fluid' %>
                                         </div>
                                     </div>
