@@ -8,19 +8,19 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <%= image_tag 'station1.jpg', class: 'img-fluid' %>
-      <div class="carousel-caption">
+      <div class="carousel-caption col-12 col-md-10 offset-md-1">
           Showcase your workstation setup
       </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'station2.jpg', class: 'img-fluid' %>
-      <div class="carousel-caption">
+      <div class="carousel-caption col-12 col-md-10 offset-md-1">
           Workstations describe who you are
       </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'station3.jpg', class: 'img-fluid' %>
-      <div class="carousel-caption">
+      <div class="carousel-caption col-12 col-md-10 offset-md-1">
           Show what gadgets you use
       </div>
     </div>
@@ -39,7 +39,7 @@
 <div class="container">
 <% @places.each do |place| %>
     <div class="row">
-            <div class="hoooyah-box col-md-8 offset-md-2">
+            <div class="hoooyah-box col-12 col-md-8 offset-md-2">
                 <h1><%= link_to place.name, place_path(place) %></h1>
                 <i><%= place.address %></i>
                 <br /><br />
