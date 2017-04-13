@@ -38,34 +38,36 @@
 <!-- KIRBY -->
 <% @places.each do |place| %>
     <div class="row">
-        <div class="hoooyah-box col-8 offset-2">
-            <h1><%= link_to place.name, place_path(place) %></h1>
-            <i><%= place.address %></i>
-            <br /><br />
-            <p><%= place.description %></p>
+        <div class="container">
+            <div class="hoooyah-box col-md-8 offset-md-2">
+                <h1><%= link_to place.name, place_path(place) %></h1>
+                <i><%= place.address %></i>
+                <br /><br />
+                <p><%= place.description %></p>
 
-            <% if place.user.present? %>
-                    <small><%= place.user.email %></small>
-            <% end %>
-            <div class="clear">
-                <br />
+                <% if place.user.present? %>
+                        <small><%= place.user.email %></small>
+                <% end %>
+                <div class="clear">
+                    <br />
+                </div>
+                <% if place.comments.present? %>
+                    <!-- <div class="col-12 col-lg-6"> -->
+                        <blockquote>
+                            <% if place.comments.last.humanized_rating.present? %>
+                                <b> <%= place.comments.last.humanized_rating %> </b> -
+                            <% end %>
+                                <%= place.comments.last.message %>
+                            <small><%= place.comments.last.user.email %></small>
+                        </blockquote>
+
+                            <% if place.photos.present? %>
+                                <%= image_tag place.photos.last.picture, class: 'img-fluid' %>
+                            <% end %>
+                    <!-- </div> -->
+                <% end %>
+
             </div>
-            <% if place.comments.present? %>
-                <!-- <div class="col-12 col-lg-6"> -->
-                    <blockquote>
-                        <% if place.comments.last.humanized_rating.present? %>
-                            <b> <%= place.comments.last.humanized_rating %> </b> -
-                        <% end %>
-                            <%= place.comments.last.message %>
-                        <small><%= place.comments.last.user.email %></small>
-                    </blockquote>
-
-                        <% if place.photos.present? %>
-                            <%= image_tag place.photos.last.picture, class: 'img-fluid' %>
-                        <% end %>
-                <!-- </div> -->
-            <% end %>
-
         </div>
     </div>
 <% end %>
