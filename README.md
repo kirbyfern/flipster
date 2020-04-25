@@ -1,24 +1,29 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Flipster
 
-Things you may want to cover:
+A Yelp style app for reviewing user's workstation around Los Angeles. Users can add pictures of their workstation/gaming-station then other users can rate, comment, and add photos to existing workstation posts.
 
-* Ruby version
+*Technical description: A Yelp clone that integrates with the Google Maps API, Bing API, and includes features like user comments, star ratings, image uploading, and user authentication. Deployed through Heroku.*
 
-* System dependencies
+## Features
 
-* Configuration
+* Amazon Web Services (S3) for photo storage.
 
-* Database creation
+* PostgreSQL for database queries involving users, places, photos, comments, and ratings.
 
-* Database initialization
+* [Devise](https://github.com/plataformatec/devise) for flexible user authentication.
 
-* How to run the test suite
+* [Google Maps API]([https://developers.google.com/maps/documentation](https://developers.google.com/maps/documentation)) for displaying map locations.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Custom [will_paginate] integration for index pagination.
 
-* Deployment instructions
+## Demo
+You can see a running version of the application at
+[https://flipster-kirby-james.herokuapp.com/][demo].
 
-* ...
+[demo]: https://flipster-kirby-james.herokuapp.com/
+
+## Screenshots
+![Flipster Homepage](https://github.com/kirbygit/flipster/blob/master/app/assets/images/flipster-homepage.jpg "Flipster Homepage")
+![Flipster Post Rating Comments](https://github.com/kirbygit/flipster/blob/master/app/assets/images/flipster-post-comments.jpg "Flipster Post")
+![Flipster New Post](https://github.com/kirbygit/flipster/blob/master/app/assets/images/flipster-new.jpg "Flipster New Post")
