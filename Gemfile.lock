@@ -233,7 +233,7 @@ GEM
     font-awesome-rails (4.7.0.3)
       railties (>= 3.2, < 5.2)
     formatador (0.2.5)
-    geocoder (1.4.7)
+    geocoder (1.6.1)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     http-cookie (1.0.3)
