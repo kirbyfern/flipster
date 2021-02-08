@@ -15,7 +15,7 @@ gem 'font-awesome-rails'
 gem 'devise'
 gem 'geocoder'
 gem 'figaro'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'fog'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
